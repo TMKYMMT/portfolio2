@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+    color: rgb(54, 55, 55);
+    font-family: "Josefin Sans",
+        Arial,"游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+body {
+    background: #f5f2e9;
+}
+
+
+
+/* リセットここまで */
+
+
+header {
+    max-width: 95%;
+    margin: 0 auto;
+
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+/* .TY {
+    width: 80px;
+    height: 50px;
+    margin-top: 15px;
+} */
+
+.btn {
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid rgb(54, 55, 55); */
+    border-radius: 3px;
+
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 888;
+}
+
+.btn span {
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    background-color: #4f260b;
+    top: 50%;
+    right: 30%;
+    transition: translate(-50%,-50%);
+    position: absolute;
+    transition: 0.3s;
+}
+
+.btn span:nth-of-type(1){
+    top: 15px;
+}
+
+.btn span:nth-of-type(2){
+    top: 23px;
+}
+
+.btn span:nth-of-type(3){
+    top: 31px;
+    transform:rotate()
+}
+
+
+.btn.is-active span:nth-of-type(1){
+    top: 23px;
+    transform: rotate(45deg);
+}
+
+.btn.is-active span:nth-of-type(2){
+    background: transparent;
+}
+
+.btn.is-active span:nth-of-type(3){
+    top: 23px;
+    transform: rotate(135deg);
+}
+
+
+
+#btn-menu {
+    width: 100%;
+    height: 30vh;
+    /* background-color: #f5f2e9; */
+    position: fixed;
+    top: -100%;
+    left: 0;
+    z-index: 777;
+}
+
+
+#btn-menu::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    transform: scale(0.1);
+    background: linear-gradient(to bottom left, #fff,#f1e2be, hwb(43 47% 3%));
+    right: -150px;
+    top: -150px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+#btn-menu.is-active::after {
+    transform: scale(1);
+}
+
+
+#btn-menu ul {
+    position: absolute;
+    top: 60%;
+    right: 3%;
+    transform: translate(-50%,-50%);
+
+    list-style: none;
+    text-align: right;
+    z-index: 1;
+}
+
+#btn-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(54, 55, 55);
+    padding: 10px;
+    font-size: 21px;
+}
+
+
+
+#btn-menu ul li a img {
+    height: 24px;
+}
+
+.x-icon img {
+    width: 15px;
+    align-items: right;
+    margin-right: 20%;
+}
+
+#btn-menu.is-active {
+    top: 0;
+}
+
+
+
+
+
+.contact-form {
+    /* border: 1px solid rgb(54, 55, 55); */
+    /* padding: 50px 80px; */
+
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 48px;
+
+    margin-top: 50px;
+    text-align: center;
+}
+
+.tanks-area {
+    border: 1px solid #fff;
+    padding: 50px 50px;
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.thankspage {
+    font-size: 48px;
+    color: hwb(188 17% 36%);
+    margin-top: 50px;
+}
+
+.message {
+    font-size: 21px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+    margin-top: 25px;
+    margin-bottom: 50px;
+    line-height: 41px;
+}
+
+
+
+
+
+
+
+
+/* footer */
+
+.site-footer {
+    position: absolute;
+    display: flex;
+}
+
+.footer-img img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 180px;
+  }
+  
+  .footer-wrap {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    color: rgb(54, 55, 55);
+    background: url(../images/footer.jpg) no-repeat center center/cover;
+    background-size: cover;
+    height: 355px;
+    width: 100%;
+    margin-top: 500px;
+  
+  }
+  
+  .footer-text {
+    margin-top: 133px;
+    margin-left: 183px;
+    font-size: 21px;
+    /* transform-origin: top left;
+    transform: scale(1.05, 1); */
+    position: absolute;
+  }
+  
+  .footer-text-psite {
+    margin-top: 25px;
+  }
+  
+  
+  
+  .footer-nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    right: 0px;
+    margin-right: 183px;
+    max-width: 374px;
+    /* justify-content: center;   */
+  }
+  
+  .footer-nav-btn {
+    margin-top: 133px;
+    display: flex;
+    justify-content: space-between;
+    width: 31.8%;
+    /* margin-left: 34%; */
+    gap: 97px;
+  }
+  
+  .footer-nav-in {
+    text-align: right;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-size: 21px;
+    font-style: normal;
+    /* transform-origin: top left;
+    transform: scale(1.05, 1); */
+  }
+  
+  
+  .footer-area {
+    position: absolute;
+    margin-top: 266px;
+    /* text-align: center; */
+    width: 100%;
+  }
+  
+  .footer-last {
+    text-align: center;
+    font-size: 21px;
+    /* transform-origin: top left; */
+    /* transform: scale(1.05, 1); */
+    /* padding: 0 50; */
+    right: 569px;
+  }
+
+
+    /* スムーススクロール */
+
+html {
+    scroll-behavior: smooth;
+}
