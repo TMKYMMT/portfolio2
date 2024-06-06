@@ -563,18 +563,14 @@ ul.tab-btn {
 .works-all {
     display: flex;
     justify-content: space-between;
-    /* margin-top: 108px; */
-    /* gap: 58px 139px; */
     gap: 30px 5%;
     width: 73.2%;
     flex-wrap: wrap;
     margin: 0 auto;
-    /* width: 100%; */
 }
 
 .works-all li {
     width: 29.3%;
-    /* margin: 0 auto; */
 }
 
 .works-wrap {
@@ -611,8 +607,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin-right: 183px; */
-    /* margin-left: 183px; */
 }
 
 
@@ -710,7 +704,7 @@ li {
     font-weight: 100;
     background: url(../images/footer.jpg) no-repeat center center/cover;
     background-size: cover;
-    height: 340px;
+    /* height: 340px; */
     width: 100%;
     /* margin-top: 74px; */
 
@@ -721,7 +715,7 @@ li {
     font-size: 21px;
     font-weight: 400;
     color: rgb(54, 55, 55);
-    padding: 9% 9% 0% 9%;
+    padding: 9% 9% 9% 9%;
 
     /* position: absolute; */
     /* max-width: 1000px; */
@@ -778,10 +772,7 @@ li {
 .footer-last {
     text-align: center;
     font-size: 21px;
-    /* transform-origin: top left; */
-    /* transform: scale(1.05, 1); */
-    /* padding: 0 50; */
-    right: 569px;
+    margin-top: 50px;
 }
 
 /* page top */
@@ -808,7 +799,7 @@ html {
 
 
 
-@media screen and (max-width:980px){
+@media screen and (max-width:960px){
     
     .btn {
         width: 50px;
@@ -1141,7 +1132,7 @@ li {
     font-weight: 100;
     background: url(../images/footer.jpg) no-repeat center center/cover;
     background-size: cover;
-    height: 355px;
+    /* height: 355px; */
     width: 100%;
     margin-top: 60px;
 
@@ -1193,7 +1184,7 @@ li {
 
 
 .footer-area {
-    position: absolute;
+    /* position: absolute; */
     margin-top: 266px;
     /* text-align: center; */
     width: 100%;
@@ -1203,6 +1194,7 @@ li {
 .footer-last {
     text-align: center;
     font-size: 21px;
+    margin-top: 20px;
     /* transform-origin: top left; */
     /* transform: scale(1.05, 1); */
     /* padding: 0 50; */

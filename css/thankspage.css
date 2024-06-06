@@ -252,92 +252,90 @@ header {
 
 /* footer */
 
-.site-footer {
-    position: absolute;
-    display: flex;
-}
-
 .footer-img img {
     position: relative;
     width: 100%;
     height: auto;
     align-items: center;
-    margin-top: 180px;
-  }
-  
-  .footer-wrap {
+    /* margin-top: 180px; */
+}
+
+.footer-wrap {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
-    color: rgb(54, 55, 55);
     background: url(../images/footer.jpg) no-repeat center center/cover;
     background-size: cover;
-    height: 355px;
+    /* height: 340px; */
     width: 100%;
-    margin-top: 500px;
-  
-  }
-  
-  .footer-text {
-    margin-top: 133px;
-    margin-left: 183px;
+    /* margin-top: 74px; */
+
+}
+
+.footer-text {
+    margin-top: 100px;
     font-size: 21px;
-    /* transform-origin: top left;
-    transform: scale(1.05, 1); */
-    position: absolute;
-  }
-  
-  .footer-text-psite {
+    font-weight: 400;
+    color: rgb(54, 55, 55);
+    padding: 9% 9% 9% 9%;
+
+    /* position: absolute; */
+    /* max-width: 1000px; */
+}
+
+.footer-text-name {
     margin-top: 25px;
-  }
-  
-  
-  
-  .footer-nav {
+    text-align: center;
+}
+
+.footer-text-psite {
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+
+.footer-nav {
     position: absolute;
     display: flex;
     justify-content: space-between;
     right: 0px;
     margin-right: 183px;
     max-width: 374px;
-    /* justify-content: center;   */
-  }
-  
-  .footer-nav-btn {
+    justify-content: center;  
+}
+
+.footer-nav-btn {
     margin-top: 133px;
     display: flex;
     justify-content: space-between;
     width: 31.8%;
     /* margin-left: 34%; */
     gap: 97px;
-  }
-  
-  .footer-nav-in {
+}
+
+.footer-nav-in {
     text-align: right;
     font-optical-sizing: auto;
     font-weight: 100;
     font-size: 21px;
     font-style: normal;
-    /* transform-origin: top left;
-    transform: scale(1.05, 1); */
-  }
-  
-  
-  .footer-area {
-    position: absolute;
-    margin-top: 266px;
+}
+
+
+.footer-area {
+    /* position: absolute; */
+    /* margin-top: 240px; */
     /* text-align: center; */
     width: 100%;
-  }
-  
-  .footer-last {
+    text-align: center;
+}
+
+.footer-last {
     text-align: center;
     font-size: 21px;
-    /* transform-origin: top left; */
-    /* transform: scale(1.05, 1); */
-    /* padding: 0 50; */
-    right: 569px;
-  }
+    margin-top: 50px;
+}
 
 
     /* スムーススクロール */
